@@ -24,8 +24,10 @@ class MyCustomTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         addSomeTabItems()
         btnMiddle.frame = CGRect(x: Int(self.tabBar.bounds.width)/2 - 30, y: -20, width: 60, height: 60)
+        
     }
     
     override func loadView() {
@@ -91,6 +93,7 @@ class MyCustomTabBarController: UITabBarController {
     }
 }
 
+
 extension UIColor {
     public convenience init?(hex: String , alpha: Double = 1.0) {
         var pureString = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
@@ -110,3 +113,4 @@ extension UIColor {
         return nil
     }
 }
+

@@ -21,6 +21,7 @@
 		A6AB2AFA2B14E18B00EB3DE4 /* MyCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB2AF92B14E18B00EB3DE4 /* MyCustomTabBar.swift */; };
 		A6AB2AFC2B14E1AF00EB3DE4 /* AdditivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB2AFB2B14E1AF00EB3DE4 /* AdditivesViewController.swift */; };
 		A6AB2AFE2B14E1BD00EB3DE4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB2AFD2B14E1BD00EB3DE4 /* HistoryViewController.swift */; };
+		A6EAB32D2B39C76200F8BFB8 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EAB32C2B39C76200F8BFB8 /* MainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		A6AB2AF92B14E18B00EB3DE4 /* MyCustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTabBar.swift; sourceTree = "<group>"; };
 		A6AB2AFB2B14E1AF00EB3DE4 /* AdditivesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditivesViewController.swift; sourceTree = "<group>"; };
 		A6AB2AFD2B14E1BD00EB3DE4 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		A6EAB32C2B39C76200F8BFB8 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE882F056D2DC5451401C4FC /* Pods-E_CategoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_CategoryTests.release.xcconfig"; path = "Target Support Files/Pods-E_CategoryTests/Pods-E_CategoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		DAC8F19A14C7FDDD121E4B56 /* Pods_E_Category_E_CategoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Category_E_CategoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30B3A3A1AD272EFB02671D0 /* Pods-E_Category.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Category.release.xcconfig"; path = "Target Support Files/Pods-E_Category/Pods-E_Category.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,11 +132,9 @@
 		A69CD7E92B08D7C40063C8C9 /* E_Category */ = {
 			isa = PBXGroup;
 			children = (
+				A6EAB3282B383DCF00F8BFB8 /* View */,
 				A69CD7EA2B08D7C40063C8C9 /* AppDelegate.swift */,
 				A69CD7EC2B08D7C40063C8C9 /* SceneDelegate.swift */,
-				A6AB2AF92B14E18B00EB3DE4 /* MyCustomTabBar.swift */,
-				A6AB2AFB2B14E1AF00EB3DE4 /* AdditivesViewController.swift */,
-				A6AB2AFD2B14E1BD00EB3DE4 /* HistoryViewController.swift */,
 				A69CD7F62B08D7C40063C8C9 /* Assets.xcassets */,
 				A69CD7F82B08D7C40063C8C9 /* LaunchScreen.storyboard */,
 				A69CD7FB2B08D7C40063C8C9 /* Info.plist */,
@@ -158,6 +158,41 @@
 				A69CD8102B08D7C50063C8C9 /* E_CategoryUITestsLaunchTests.swift */,
 			);
 			path = E_CategoryUITests;
+			sourceTree = "<group>";
+		};
+		A6EAB3282B383DCF00F8BFB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6EAB32A2B383DE000F8BFB8 /* TabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6EAB3292B383DD700F8BFB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6AB2AFB2B14E1AF00EB3DE4 /* AdditivesViewController.swift */,
+				A6AB2AFD2B14E1BD00EB3DE4 /* HistoryViewController.swift */,
+				A6EAB32B2B383DFF00F8BFB8 /* Cell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6EAB32A2B383DE000F8BFB8 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A6AB2AF92B14E18B00EB3DE4 /* MyCustomTabBar.swift */,
+				A6EAB3292B383DD700F8BFB8 /* Controller */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		A6EAB32B2B383DFF00F8BFB8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A6EAB32C2B39C76200F8BFB8 /* MainCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A711F4DF930FA800E7FC2AFC /* Pods */ = {
@@ -411,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6EAB32D2B39C76200F8BFB8 /* MainCollectionViewCell.swift in Sources */,
 				A6AB2AFA2B14E18B00EB3DE4 /* MyCustomTabBar.swift in Sources */,
 				A69CD7F52B08D7C40063C8C9 /* E_Category.xcdatamodeld in Sources */,
 				A69CD7EB2B08D7C40063C8C9 /* AppDelegate.swift in Sources */,
@@ -595,6 +631,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = E_Category/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Do you allow me to use the camera?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -625,6 +662,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = E_Category/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Do you allow me to use the camera?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
